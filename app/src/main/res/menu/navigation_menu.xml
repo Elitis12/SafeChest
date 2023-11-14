@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/MenuGroup1">
+            <item android:id="@+id/menuMdpMaitre"
+                android:icon="@drawable/ic_key"
+                android:title="Changer votre mot de passe">
+            </item>
+
+            <item android:id="@+id/menuExportBDD"
+                android:icon="@drawable/ic_equipement"
+                android:iconTint="@color/white"
+                android:title="Exporter / Importer une BDD">
+            </item>
+    </group>
+    <group android:id="@+id/MenuGroup2">
+            <item android:id="@+id/menuMdpGenerator"
+                android:icon="@drawable/ic_padlock_change"
+                android:title="Générateur de mot de passe aléatoire">
+        </item>
+    </group>
+
+
+</menu>

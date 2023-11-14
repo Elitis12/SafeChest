@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SafeChest</string>
+    <string name="mdp_default_name">NomMDP</string>
+    <string name="mdp_default_mdp">MdpDefault</string>
+    <string name="backup_default_name">NomBACKUP</string>
+    <string name="backup_default_date">DateBACKUP</string>
+    <string name="generatepassword">GENERATEPASSWORD</string>
+
+    <string-array name="question">
+        <item>Dans quelle ville êtes-vous né ?</item>
+        <item>Quel est votre film favori ?</item>
+        <item>Quelle est la marque de votre première voiture ?</item>
+        <item>Quelle est votre couleur favorite ?</item>
+        <item>Quel est votre acteur ou musicien favori ?</item>
+
+    </string-array>
+
+</resources>

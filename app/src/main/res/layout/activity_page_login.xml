@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_background"
+    tools:context=".page_login">
+
+    <Button
+        android:id="@+id/buttonContinuez"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="85dp"
+        android:background="#00000000"
+        android:onClick="LienInscription"
+        android:text="Inscription"
+        android:textColor="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConnexion" />
+
+    <Button
+        android:id="@+id/buttonConnexion"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="85dp"
+        android:background="@drawable/custom_button"
+        android:elevation="2dp"
+        android:shadowColor="@color/buttonStart"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:text="Connexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMotDePasseOublie" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutLogin"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="76dp"
+        android:hint="Votre login"
+        android:textColorHint="@color/color_hint"
+        app:hintTextColor="@color/color_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageLock"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:textColor="@color/color_text"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageMember"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLock"
+        app:srcCompat="@drawable/ic_keychain"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageLock"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/ic_avatar"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_padlock" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="66dp"
+        android:letterSpacing="1"
+        android:text="SAFE CHEST"
+        android:textColor="@color/white"
+        android:textScaleX="1.25"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIcon" />
+
+    <TextView
+        android:id="@+id/textViewMotDePasseOublie"
+        android:layout_width="182dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="75dp"
+        android:gravity="right"
+        android:text="Mot de passe oublié ?"
+        android:textColor="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutPassword" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutPassword"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="76dp"
+        android:hint="Votre mot de passe"
+        android:inputType="textPassword"
+        android:textColorHint="@color/color_hint"
+        app:hintTextColor="@color/color_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMember"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutLogin"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/color_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input"
+            android:padding="10dp"
+            android:textColor="@color/color_text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
